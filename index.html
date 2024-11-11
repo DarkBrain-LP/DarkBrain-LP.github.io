@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Yawo Yovo</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script>
+    function calculerAge() {
+      var dateNaissance = "2002-12-31";
+      var today = new Date();
+      var dateNaissanceFormat = new Date(dateNaissance);
+      var age = today.getFullYear() - dateNaissanceFormat.getFullYear();
+      var moisDiff = today.getMonth() - dateNaissanceFormat.getMonth();
+
+      if (moisDiff < 0 || (moisDiff === 0 && today.getDate() < dateNaissanceFormat.getDate())) {
+        age--;
+      }
+
+      document.getElementById("age").innerHTML = age + " ans";
+    }
+    window.onload = calculerAge;
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/moi.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Yawo Yovo</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.linkedin.com/in/yawo-yovo" class="linkedin" target="_blank"><i
+              class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/DarkBrain-LP" class="github" target="_blank"><i class="bi-github"></i></a>
+          <!-- <a href="https://x.com/yovo_yawo" class="twitter" target="_blank"><i class="bi-twitter-x"></i></a> -->
+          <a href="https://instagram.com/yawo_yovo" class="instagram" target="_blank"><i class="bi-instagram"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Accueil</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Présentation</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Parcours</span></a>
+          </li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+              <span>Projets réalisés</span></a></li>
+
+          <li><a href="#benevolat" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+            <span>Contributions nationales & Bénévolat</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Yawo Yovo</h1>
+      <p> <span class="typed"
+          data-typed-items="Je suis un ingénieur des travaux informatiques, Je fais du développement Web, Je suis passionné par les systèmes embarqués, Je suis passionné par la robotique, Je suis passionné par l'IA , "></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Présentation</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Ingénieur des Travaux Informatique</h3>
+            <p class="fst-italic">
+
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi-circle-fill"></i> <strong>Date de naissanse:</strong> <span>31 Décembre
+                      2002</span></li>
+                  <!-- <li><i class="bi-circle-fill"></i> <strong>Téléphone:</strong> <span>+33 669953396</span></li> -->
+                  <li><i class="bi-circle-fill"></i> <strong>Pays:</strong> <span>France</span></li>
+                  <li><i class="bi-circle-fill"></i> <strong>Adresse mail:</strong>
+                    <span>florentyovo0@gmail.com | yawo.yovo@utbm.fr</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi-circle-fill"></i> <strong>Age:</strong> <span id="age"></span></li>
+                  <li><i class="bi-circle-fill"></i> <strong>Niveau d'étude:</strong> <span>BAC + 3</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Compétences</h2>
+          <p></p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-4" data-aos="fade-up">
+
+            
+            <div class="progress">
+              <span class="skill">ROS | SLAM | PID Controller <i class="val">40%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C# | .NET Web API | Blazor <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            
+            <div class="progress">
+              <span class="skill">Python | Flask | Blazor<i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            
+            <div class="progress">
+              <span class="skill">HTML | CSS | JavaScript <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+
+            
+            <div class="progress">
+              <span class="skill">FreeRTOS | GPIO | USART | RTC | LIN & CAN <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            
+            <div class="progress">
+              <span class="skill">Flutter <i class="val">25%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JS | Vue.JS <i class="val">20%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="progress">
+              <span class="skill">Azure <i class="val">20%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">TurtleBot3 | STM32 | Arduino <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            
+            <div class="progress">
+              <span class="skill">Git | Github <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Clean Architecture <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Domain Driven Design <i class="val">20%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Parcours Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Parcours</h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+
+
+            <h3 class="resume-title">Scolaire</h3>
+            <div class="resume-item">
+              <h4>Diplôme d'Ingénieur de Spécialité Informatique</h4>
+              <p>
+                Robotique et Informatique embarquée
+              </p>
+              <h5>2023 - 2026</h5>
+              <p><em>Université de Technologie de Belfort-Montbéliard (UTBM)</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Ingénieur des Travaux Informatique</h4>
+              <p>
+                Option génie logiciel et système d'information
+              </p>
+              <h5>2020 - 2023</h5>
+              <p><em>Institut Africain d'Informatique (IAI-TOGO)</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>BACCALAUREAT</h4>
+              <p>
+                Série C4
+              </p>
+              <h5>Session Septembre 2020</h5>
+              <p><em>Lycée Lomé Port</em></p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Expérience &amp; formations</h3>
+            <div class="resume-item">
+              <h4>Stage en génie logiciel et système d'information</h4>
+              <h5>Mai 2023 - Aout 2023</h5>
+              <p><em>DAROLLO TECHNOLOGIES CORPORATION</em></p>
+              <p>
+                Stage mémoire de validation de ma formation à l'IAI-TOGO en vue de l'obtention de mon diplôme
+                d'ingénieur des travaux informatiques
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>Stage en génie logiciel</h4>
+              <h5>Septembre 2022 - Mars 2022</h5>
+              <p><em>DAROLLO TECHNOLOGIES CORPORATION</em></p>
+              <p>
+                Stage de mise en pratique et d'acquisition de compétences
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>Stage en génie logiciel</h4>
+              <h5>Juin 2022 - Août 2022</h5>
+              <p><em>KYA Energy Group</em></p>
+              <p>
+                Stage de validation de ma deuxième année de formation en vue d'accéder à ma troisième année
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Projets réalisés</h2>
+        </div>
+        <!-- Portfolio Grid Items-->
+        <div class="row justify-content-center">
+          <!-- Portfolio Item 1-->
+          <div class="col-md-6 col-lg-3 mb-5 bg-body me-5" style="cursor: pointer;">
+            <div class="portfolio-item mx-auto text-center" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+              <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="assets/img/portfolio/gesnote/logo.png" alt="..." style="height: 20vh;"
+                class="mb-3" />
+              <h5>Gestion de rapports de notes des inspections</h5>
+            </div>
+          </div>
+          <!-- Portfolio Item 2-->
+          <div class="col-md-6 col-lg-3 mb-5 bg-body me-5" style="cursor: pointer;">
+            <div class="portfolio-item mx-auto text-center" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+              <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="assets/img/portfolio/gesnote/logo.png" alt="..." style="height: 20vh;"
+                class="mb-3" />
+              <h5 class="mt-4">Module de gestion de notes d'un SAAS de gestion d'écoles</h5>
+            </div>
+          </div>
+          <!-- Portfolio Item 7-->
+          <div class="col-md-6 col-lg-3 mb-5 bg-body me-5" style="cursor: pointer;">
+            <div class="portfolio-item mx-auto text-center" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
+              <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="assets/img/portfolio/melurb/1.png" alt="..." style="height: 20vh;"
+                class="mb-3" />
+              <h5 class="mt-4">MELURB</h5>
+            </div>
+          </div>
+          <!-- Portfolio Item 3-->
+          <div class="col-md-6 col-lg-3 mb-5 bg-body me-5" style="cursor: pointer;">
+            <div class="portfolio-item mx-auto text-center" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+              <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="assets/img/portfolio/essivi/1.png" alt="..." style="height: 20vh;"
+                class="mb-3" />
+              <h5 class="mt-4">ESSIVI</h5>
+            </div>
+          </div>
+          <!-- Portfolio Item 4-->
+          <div class="col-md-6 col-lg-3 mb-5 bg-body me-5" style="cursor: pointer;">
+            <div class="portfolio-item mx-auto text-center" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+              <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="assets/img/portfolio/netatlas/1.jpeg" alt="..." style="height: 20vh;"
+                class="mb-3" />
+              <h5 class="mt-4">NETATLAS</h5>
+            </div>
+          </div>
+          <!-- Portfolio Item 5-->
+          <div class="col-md-6 col-lg-3 mb-5 bg-body me-5" style="cursor: pointer;">
+            <div class="portfolio-item mx-auto text-center" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+              <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="assets/img/portfolio/lectionnaire/1.jpeg" alt="..." style="height: 20vh;"
+                class="mb-3" />
+              <h5 class="mt-4">Lectionnaire EEPT</h5>
+            </div>
+          </div>
+          
+          
+          <!-- Portfolio Item 6-->
+          <div class="col-md-6 col-lg-3 mb-5 bg-body me-5" style="cursor: pointer;">
+            <div class="portfolio-item mx-auto text-center" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+              <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="assets/img/portfolio/mytask/1.png" alt="..." style="height: 20vh;"
+                class="mb-3" />
+              <h5 class="mt-4">My-Tasks</h5>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          
+          <!--  -->
+          <!--  -->
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+    <!-- ======= Parcours Section ======= -->
+    <section id="benevolat" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Bénévolat & Projet à intérêt public</h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+
+
+            <h3 class="resume-title">Bénévolat</h3>
+            <div class="resume-item">
+              <h4>Google Developer Students Club</h4>
+              <p>
+                En tant que dirigeant de la core team, j'ai supervisé l'organisation de workshops sur Flutter et promu l'utilisation de technologies telles que Firebase et Google Cloud. Nous avons formé des équipes qui ont participé au Google Solution Challenge, où elles ont proposé des solutions innovantes pour des problèmes réels tels que l'accès à l'eau, entre autres. Mon rôle a été de garantir la satisfaction des membres du club en leur offrant une expérience enrichissante et unique, tout en visant à résoudre des problématiques locales à travers ces technologies.
+              </p>
+              <h5>@Google, 2022 - 2023</h5>
+              <p><em>Institut Africain d'Informatique (IAI-TOGO)</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Microsoft Learn Student Ambassadors</h4>
+              <p>
+                En tant qu'embassadeur, mon objectif est de me familiariser avec les technologies Microsoft et de les promouvoir auprès des étudiants de mon établissement. J'organise des ateliers sur les technologies Microsoft telles que Dotnet, Blazor, Azure, etc.
+              </p>
+              <h5>@Microsoft, Jan 2024 - Maintenant</h5>
+              <!-- <p><em>Institut Africain d'Informatique (IAI-TOGO)</em></p> -->
+            </div>
+            <div class="resume-item">
+              <h4>Suiveur de Mission Informatique</h4>
+              <p>
+                Au sein de la Junior UTBM, nous prospectons les entreprises afin d'avoir des missions à confier aux étudiants de l'UTBM. 
+
+                
+                En tant que suiveur de missions informatiques, je suis chargé de :
+                // mettre les éléments suivants en liste
+                <ul>
+                  <li>Étudier ou établir le cahier de charges des missions proposées par les entreprises</li>
+                  <li>Établir le planning des missions</li>
+                  <li>Trouver les intervenants dont les profils satisfont les missions</li>
+                  <li>Faire le suivi des missions (réunions avec les intervenants et les entreprises)</li>
+                </ul>
+
+                La Junior UTBM me permet d'avoir une expérience très valorisante en gestion de projet, communication et en plusieurs termes techniques diversifiés
+              </p>
+              <h5>@Junior UTBM, Février 2024 - Septembre 2024</h5>
+              <!-- <p><em>Lycée Lomé Port</em></p> -->
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Projet à intérêt public</h3>
+            <div class="resume-item">
+              <h4>MIABE Hackathon</h4>
+              <h5>Mai 2023 - Aout 2023</h5>
+              <p><em>DAROLLO TECHNOLOGIES CORPORATION</em></p>
+              <p>
+                MIABE Hackathon est un concours de programmation informatique au Togo dont je fais parti de l'équipe initiatrice. Le concours propose aux étudiants des défis réels auxquels les entreprises et les citoyens togolais sont confrontés. Cela encourage les étudiants à penser de manière créative et à trouver des solutions nouvelles et innovantes à ces problèmes. Le concours permet aux étudiants de travailler en collaboration avec des mentors et des experts du secteur. Cela leur donne l'opportunité d'apprendre des meilleurs et d'acquérir des compétences précieuses. MIABE Hackathon attire l'attention du public sur l'importance de l'innovation pour le développement du Togo. Cela encourage les jeunes à s'intéresser aux filières du domaine informatique et à poursuivre des carrières dans le secteur technologique.
+                <br>
+                Cette expérience m'a permi d'avoir une expérience valorisante en Gestion d’événement (logistique, partenariats, financement, communication). En plus de l'aspect gestion d'événement, j'ai été en charge de la :
+                <ul>
+                  <li>Création de l’application de génération des équipese et d’affectation de thèmes aux équipes</li>
+                  <li>Proposition de thème</li>
+                  <li>Contribution à la planification des phases du concours</li>
+                </ul>
+                <a href="https://mbh.darollotech.com/events/" target="_blank">En savoir plus</a>
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>IAI GDSC Hackathon'22</h4>
+              <h5>Décembre 2022</h5>
+              <p><em>GDSC IAI-TOGO</em></p>
+              <p>
+                Le hackathon a pour objectif de permettre aux étudiants de l'IAI-TOGO de mettre en pratique les compétences acquises en développement Web et mobile. Les étudiants sont invités à travailler en équipe pour résoudre des problèmes réels en utilisant les technologies Google. Les sujets proposés sont orientés vers des problématiques locales et internationales. Les étudiants sont encadrés par des mentors et des experts du secteur. Le hackathon a été une occasion pour les étudiants membres du club de montrer leur créativité et leur capacité à travailler en équipe. Cela leur a permis de développer des compétences en gestion de projet, en communication et en résolution de problèmes.
+                <!-- Je veux intégrer le post linkedin. Mais je veux que ca s'affiche en popup quand on click sur un lien ou bouton. Voici le code généré par linkedin: <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7013054476466954240" height="735" width="504" frameborder="0" allowfullscreen="" title="Post intégré"></iframe> -->
+
+                <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7013054476466954240" target="_blank">Voir les sujets</a> <br>
+                <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7012405014203662336" target="_blank">Le Hackathon</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contacts</h2>
+
+        </div>
+
+        <div data-aos="fade-in">
+
+          <div class=" d-flex align-items-stretch">
+            <div class="info">
+              <!-- <div class="phone ">
+                <i class="bi bi-phone"></i>
+                <h4>Téléphone:</h4>
+                <p>+33 669953396</p>
+              </div> -->
+              <div class="email ">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p><a href="mailto:florentyovo0@gmail.com" target="_blank"
+                  class="text-secondary ms-3">florentyovo0@gmail.com</a> | <a href="mailto:yawo.yovo@utbm.fr" target="_blank"
+                  class="text-secondary ms-3">yawo.yovo@utbm.fr</a></p>
+              </div>
+              <div class="phone mb-4 ">
+                <i class="bi bi-linkedin"></i>
+                <h4>LinkedIn:</h4>
+                <a href="https://www.linkedin.com/in/yawo-yovo" target="_blank"
+                  class="text-secondary ms-3">Yawo Yovo</a>
+              </div>
+              <div class="phone mb-4 ">
+                <i class="bi bi-github"></i>
+                <h4>Github:</h4>
+                <a href="https://github.com/DarkBrain-LP" target="_blank" class="text-secondary ms-3">DarkBrain-LP</a>
+              </div>
+              <!-- <div class="phone mb-4 ">
+                <i class="bi bi-twitter-x"></i>
+                <h4>X:</h4>
+                <a href="https://x.com/yovo_yawo" target="_blank" class="text-secondary ms-3">Yawo Yovo</a>
+              </div> -->
+              <div class="phone mb-4 ">
+                <i class="bi bi-instagram"></i>
+                <h4>Instagram:</h4>
+                <a href="https://instagram.com/yawo_yovo" target="_blank" class="text-secondary ms-3">Yawo Yovo</a>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- Portfolio Modals-->
+  <!-- Portfolio Modal 1-->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"></button></div>
+        <div class="modal-body text-center pb-5">
+          <div class="container">
+            <div class="col-lg-12">
+              <div class="portfolio-details-slider swiper bg-light">
+                <div class="swiper-wrapper align-items-center">
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/inspection/1.png" alt="" style="height: 50vh; width: 100vh;">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/inspection/2.png" alt="" style="height: 50vh; width: 100vh;">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/inspection/3.png" alt="" style="height: 50vh; width: 100vh;">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/inspection/4.png" alt="" style="height: 50vh; width: 100vh;">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/inspection/5.png" alt="" style="height: 50vh; width: 100vh;">
+                  </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+
+              </div>
+              <h3>Applciation de gestion de rapports Ecoles-Inspection</h3>
+              <strong>Technologies:</strong>
+              <p class="text-primary">
+                .NET Web API, Blazor
+              </p>
+              <strong>Description:</strong>
+              <p class="text-secondary ms-5 me-5 ps-5">
+                Plateforme permettant aux écoles de rédiger les rapports,
+                offrant aux inspecteurs un portail de leur consultation
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Modal 2-->
+  <div class="portfolio-modal modal fade" id="portfolioModalx" tabindex="-1" aria-labelledby="portfolioModalx"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"></button></div>
+        <div class="modal-body text-center pb-5">
+          <div class="container">
+            <div class="col-lg-12">
+              <div class="portfolio-details-slider swiper bg-light">
+                <div class="swiper-wrapper align-items-center">
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/gescourrier/1.png" alt="" style="height: 50vh; width: 100vh;">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/gescourrier/2.png" alt="" style="height: 50vh; width: 100vh;">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/gescourrier/3.png" alt="" style="height: 50vh; width: 100vh;">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/gescourrier/4.png" alt="" style="height: 50vh; width: 100vh;">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/gescourrier/5.png" alt="" style="height: 50vh; width: 100vh;">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/gescourrier/6.png" alt="" style="height: 50vh; width: 100vh;">
+                  </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+
+              </div>
+              <h3>Plateforme de gestion et de traitement de flux de courriers</h3>
+              <strong>Technologies:</strong>
+              <p class="text-primary">
+                React, JavaScript, Flask, Python
+              </p>
+              <strong>Description:</strong>
+              <p class="text-secondary ms-5 me-5 ps-5">
+                Plateforme permettant aux entreprises de gérer efficacement les courriers physiques reçus et
+                envoyés à
+                des partenaires ainsi que la gestion des tâches liées à ces courriers
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Modal 3-->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"></button></div>
+        <div class="modal-body text-center pb-5">
+          <div class="container">
+            <div class="col-lg-12">
+              <div class="portfolio-details-slider swiper bg-light">
+                <div class="swiper-wrapper align-items-center">
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/essivi/1.png" alt="" style="height: 50vh; width: 100vh;">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/essivi/2.png" style="height: 50vh; width: 100vh;">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/essivi/3.png" style="height: 50vh; width: 100vh;">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/essivi/4.png" style="height: 50vh; width: 100vh;">
+                  </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+
+              </div>
+              <h3>Application de Gestion de production et de livraison d'eau mminérale</h3>
+              <strong>Technologies:</strong>
+              <p class="text-primary">
+                .NET Web API, Blazor, Sql Server
+              </p> (<a href="https://github.com/DarkBrain-LP/Essivi.NET.Admin" target="_blank">github</a>)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+  <!-- Portfolio Modal 4-->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"></button></div>
+        <div class="modal-body text-center pb-5">
+          <div class="container">
+            <div class="col-lg-12">
+              <div class="portfolio-details-slider swiper bg-light">
+                <div class="swiper-wrapper align-items-center">
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/netatlas/1.jpeg" alt="" style="height: 50vh; width: 100vh;">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/netatlas/2.jpeg" style="height: 50vh; width: 100vh;">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/netatlas/3.jpeg" style="height: 50vh; width: 100vh;">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/netatlas/4.jpeg" style="height: 50vh; width: 100vh;">
+                  </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+
+              </div>
+              <h3>NETATLAS</h3>
+              <strong>Technologies:</strong>
+              <p class="text-primary">
+                Asp.NET
+              </p>
+              Application de type réseau social fait en groupe
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 5-->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"></button></div>
+        <div class="modal-body text-center pb-5">
+          <div class="container">
+            <div class="col-lg-12">
+              <div class="portfolio-details-slider swiper bg-light">
+                <h3>Lectionnaire EEPT : Flutter (<a href="https://play.google.com/store/apps/details?id=com.datecorp.lectionnaire_eept" target="_blank">Playstore (5k+ Downloads): Application de lecture de texte et audios du lectionnaire EEPT</a>)</h3>
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/lectionnaire/1.jpeg" alt="" style="height: 75vh; width: 40vh;">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/lectionnaire/2.jpeg" alt="" style="height: 75vh; width: 40vh;">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/lectionnaire/3.jpeg" alt="" style="height: 75vh; width: 40vh;">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Portfolio Modal 6-->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"></button></div>
+        <div class="modal-body text-center pb-5">
+          <div class="container">
+            <div class="col-lg-12">
+              <div class="portfolio-details-slider swiper bg-light">
+                <h3>My-Tasks : .NET MAUI (<a href="https://github.com/DarkBrain-LP/My-Tasks" target="_blank">github</a>)</h3>
+                <div class="swiper-wrapper align-items-center">
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/mytask/1.png" alt="" style="height: 75vh; width: 40vh;">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/mytask/2.png" alt="" style="height: 75vh; width: 40vh;">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/mytask/3.png" alt="" style="height: 75vh; width: 40vh;">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 7-->
+  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"></button></div>
+        <div class="modal-body text-center pb-5">
+          <div class="container">
+            <div class="col-lg-12">
+              <div class="portfolio-details-slider swiper bg-light">
+                <h3>MELURB, application de simulation de l'évolution des villes (<a href="https://bit.ly/melurb" target="_blank">visiter</a>)</h3>
+                <div class="swiper-wrapper align-items-center">
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/melurb/1.png" alt="" style="height: 50vh; width: 100vh;">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/melurb/2.png" alt="" style="height: 50vh; width: 100vh;">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/melurb/3.png" alt="" style="height: 50vh; width: 100vh;">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+      <!-- JS Swiper -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        var mySwiper = new Swiper('.portfolio-details-slider', {
+          loop: true,
+          autoplay: {
+            delay: 3000, 
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+      </script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
