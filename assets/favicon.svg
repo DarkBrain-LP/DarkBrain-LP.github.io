@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#0a0e14"/>
+  <rect x="6" y="6" width="52" height="52" rx="10" fill="none" stroke="#4ee0a8" stroke-width="2"/>
+  <text x="32" y="41" font-family="JetBrains Mono, monospace" font-size="22" font-weight="700" fill="#4ee0a8" text-anchor="middle">EY</text>
+  <circle cx="10" cy="10" r="1.6" fill="#4ee0a8"/>
+  <circle cx="54" cy="10" r="1.6" fill="#4ee0a8"/>
+  <circle cx="10" cy="54" r="1.6" fill="#4ee0a8"/>
+  <circle cx="54" cy="54" r="1.6" fill="#4ee0a8"/>
+</svg>
