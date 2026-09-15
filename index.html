@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Emmanuel Yovo — Embedded Firmware Engineer</title>
-<meta name="description" content="Emmanuel Yovo — Embedded Firmware Engineer specializing in real-time C/C++ on ARM Cortex-M, FreeRTOS and power electronics control for energy & transportation systems.">
+<title>Emmanuel Yovo — Ingénieur logiciel embarqué</title>
+<meta name="description" content="Emmanuel Yovo — Ingénieur logiciel embarqué spécialisé en C/C++ temps réel, ARM Cortex-M, FreeRTOS et contrôle-commande pour l'énergie et les transports.">
 <meta name="author" content="Emmanuel Yovo">
 
 <!-- Open Graph / social preview -->
@@ -34,15 +34,16 @@
     <a href="#top" class="logo">
       <span class="logo-bracket">&lt;</span>EY<span class="logo-bracket">/&gt;</span>
     </a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="#about"><span class="nav-idx">01</span>About</a>
-      <a href="#skills"><span class="nav-idx">02</span>Skills</a>
-      <a href="#experience"><span class="nav-idx">03</span>Experience</a>
-      <a href="#projects"><span class="nav-idx">04</span>Projects</a>
-      <a href="#education"><span class="nav-idx">05</span>Education</a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#about"><span class="nav-idx">01</span>Profil</a>
+      <a href="#skills"><span class="nav-idx">02</span>Compétences</a>
+      <a href="#experience"><span class="nav-idx">03</span>Expérience</a>
+      <a href="#projects"><span class="nav-idx">04</span>Projets</a>
+      <a href="#education"><span class="nav-idx">05</span>Formation</a>
       <a href="#contact"><span class="nav-idx">06</span>Contact</a>
     </nav>
-    <a class="btn btn-ghost nav-cv" href="assets/Emmanuel_Yovo_CV.pdf" target="_blank" rel="noopener">Résumé ↓</a>
+    <a class="lang-switch mono" href="index-en.html" hreflang="en" lang="en" aria-label="Switch to English">EN</a>
+    <a class="btn btn-ghost nav-cv" href="assets/Emmanuel_Yovo_CV.pdf" target="_blank" rel="noopener">CV ↓</a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -54,7 +55,7 @@
   <!-- HERO -->
   <section class="hero" id="top">
     <div class="hero-inner">
-      <p class="hero-kicker mono"><span class="dot"></span> AVAILABLE FOR RELOCATION · OPEN TO OFFERS WORLDWIDE</p>
+      <p class="hero-kicker mono"><span class="dot"></span> DISPONIBLE IMMÉDIATEMENT · MOBILITÉ INTERNATIONALE</p>
       <h1 class="hero-title">
         Emmanuel <span class="text-accent">Yovo</span>
       </h1>
@@ -62,17 +63,15 @@
         <span id="typedRole"></span><span class="cursor">_</span>
       </h2>
       <p class="hero-desc">
-        I build real-time firmware that sits between hardware and the physical world —
-        power converters, connected sensors, and control-command systems for
-        <strong>energy</strong> and <strong>transportation</strong> equipment.
-        Currently finishing an engineering double-degree at UTBM, based in Strasbourg, France —
-        open to opportunities in France, Switzerland, Luxembourg, the US, Canada, Singapore
-        and beyond.
+        Ingénieur diplômé de l'UTBM, je développe des firmwares temps réel à l'interface du matériel
+        et du monde physique : convertisseurs de puissance, capteurs connectés et systèmes de
+        contrôle-commande pour les secteurs de <strong>l'énergie</strong> et des <strong>transports</strong>.
+        Basé à Strasbourg, je recherche un poste d'ingénieur logiciel embarqué, en France ou à l'international.
       </p>
       <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
-        <a href="assets/Emmanuel_Yovo_CV.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Download CV</a>
+        <a href="#projects" class="btn btn-primary">Voir les projets</a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+        <a href="assets/Emmanuel_Yovo_CV.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Télécharger le CV</a>
       </div>
       <div class="hero-meta mono">
         <span>Strasbourg, FR</span>
@@ -90,45 +89,40 @@
   <!-- ABOUT -->
   <section class="section" id="about">
     <div class="section-inner">
-      <p class="section-tag mono">01 · ABOUT</p>
-      <h2 class="section-title">From Lomé to a low-level control loop</h2>
+      <p class="section-tag mono">01 · PROFIL</p>
+      <h2 class="section-title">Du logiciel au contrôle temps réel</h2>
       <div class="about-grid">
         <div class="about-text">
           <p>
-            I'm an embedded software engineer completing an engineering double-degree
-            (Computer Science — Embedded Systems &amp; Robotics, plus a M.Sc. in Complex
-            Systems / Mechatronics) at <strong>UTBM</strong>, France. I started my studies
-            in Togo with a B.Sc. in Software Engineering before moving to France to
-            specialize in embedded and real-time systems.
+            Ingénieur logiciel embarqué diplômé d'un double cursus à l'<strong>UTBM</strong>
+            (Informatique — Systèmes embarqués &amp; robotique, et Master Systèmes complexes / Mécatronique),
+            j'ai commencé mes études au Togo avec une licence en génie logiciel avant de me spécialiser
+            en France dans les systèmes embarqués et temps réel.
           </p>
           <p>
-            My work sits at the intersection of hardware and software: writing low-level
-            C on ARM Cortex-M4 targets to close real-time control loops (power electronics,
-            motor and current regulation), designing multi-task firmware architectures under
-            FreeRTOS, and wiring the communication stacks — CAN, Modbus, MQTT, gRPC — that
-            let embedded systems talk to the rest of the world.
+            Mon travail se situe à l'interface du matériel et du logiciel : développement C bas niveau
+            sur ARM Cortex-M4 pour des boucles de contrôle temps réel, architecture multitâche sous
+            FreeRTOS et intégration de piles de communication CAN, Modbus, MQTT et gRPC.
           </p>
           <p>
-            I've built this across three placements: transforming a UPS into a
-            high-performance test current source at <strong>SOCOMEC</strong>, developing the
-            firmware of a connected air purifier at <strong>TECHNOPURE</strong>, and building
-            microgrid control-command logic at <strong>EDF R&amp;D</strong>. I'm now looking for
-            my first full-time role — ideally in energy or transportation (aerospace, rail,
-            automotive) firmware — and I'm genuinely open to relocating internationally to
-            find the right team.
+            J'ai développé cette expertise chez <strong>SOCOMEC</strong>, sur la conversion de puissance,
+            chez <strong>TECHNOPURE</strong>, sur le firmware d'un équipement connecté, et à
+            <strong>EDF R&amp;D</strong>, sur le contrôle-commande de microgrids. Je recherche aujourd'hui
+            un poste, idéalement dans l'énergie ou les transports (aéronautique, ferroviaire,
+            automobile), avec une mobilité internationale.
           </p>
           <div class="about-stats">
             <div class="stat">
               <span class="stat-num mono">3</span>
-              <span class="stat-label">Embedded placements</span>
+              <span class="stat-label">Expériences embarquées</span>
             </div>
             <div class="stat">
               <span class="stat-num mono">4+</span>
-              <span class="stat-label">MCU / SoC families</span>
+              <span class="stat-label">Familles de MCU / SoC</span>
             </div>
             <div class="stat">
               <span class="stat-num mono">10+</span>
-              <span class="stat-label">Countries open to relocation</span>
+              <span class="stat-label">Pays envisagés</span>
             </div>
           </div>
         </div>
@@ -162,12 +156,12 @@
   <!-- SKILLS -->
   <section class="section section-alt" id="skills">
     <div class="section-inner">
-      <p class="section-tag mono">02 · SKILLS</p>
-      <h2 class="section-title">Toolbox</h2>
+      <p class="section-tag mono">02 · COMPÉTENCES</p>
+      <h2 class="section-title">Compétences clés</h2>
       <div class="skills-grid">
 
         <div class="skill-card">
-          <div class="skill-head"><span class="skill-icon">{ }</span><h3>Embedded Development</h3></div>
+          <div class="skill-head"><span class="skill-icon">{ }</span><h3>Développement embarqué</h3></div>
           <div class="chips">
             <span class="chip">C</span><span class="chip">C++</span><span class="chip">ARM Assembly</span>
             <span class="chip">Python</span><span class="chip">Go</span><span class="chip">IAR Embedded Workbench</span>
@@ -176,7 +170,7 @@
         </div>
 
         <div class="skill-card">
-          <div class="skill-head"><span class="skill-icon">&#9881;</span><h3>RTOS &amp; Frameworks</h3></div>
+          <div class="skill-head"><span class="skill-icon">&#9881;</span><h3>RTOS &amp; environnements</h3></div>
           <div class="chips">
             <span class="chip">FreeRTOS</span><span class="chip">Micrium OS</span><span class="chip">ESP-IDF</span>
             <span class="chip">Embedded Linux</span>
@@ -184,7 +178,7 @@
         </div>
 
         <div class="skill-card">
-          <div class="skill-head"><span class="skill-icon">&#9707;</span><h3>Hardware &amp; MCUs</h3></div>
+          <div class="skill-head"><span class="skill-icon">&#9707;</span><h3>Matériel &amp; microcontrôleurs</h3></div>
           <div class="chips">
             <span class="chip">ARM Cortex-M4</span><span class="chip">STM32</span><span class="chip">Infineon XMC4500</span>
             <span class="chip">ESP32</span><span class="chip">FPGA — Xilinx Zynq-7 / Kintex-7</span>
@@ -192,7 +186,7 @@
         </div>
 
         <div class="skill-card">
-          <div class="skill-head"><span class="skill-icon">&#8644;</span><h3>Protocols &amp; Network</h3></div>
+          <div class="skill-head"><span class="skill-icon">&#8644;</span><h3>Protocoles &amp; réseaux</h3></div>
           <div class="chips">
             <span class="chip">CAN</span><span class="chip">CANopen</span><span class="chip">LIN</span>
             <span class="chip">Modbus TCP/RTU</span><span class="chip">MQTT</span><span class="chip">gRPC</span>
@@ -201,7 +195,7 @@
         </div>
 
         <div class="skill-card">
-          <div class="skill-head"><span class="skill-icon">&#8767;</span><h3>Control &amp; Signal</h3></div>
+          <div class="skill-head"><span class="skill-icon">&#8767;</span><h3>Contrôle &amp; signal</h3></div>
           <div class="chips">
             <span class="chip">PID anti-windup</span><span class="chip">Clarke / αβ transform</span>
             <span class="chip">Droop control</span><span class="chip">Frequency analysis</span>
@@ -210,7 +204,7 @@
         </div>
 
         <div class="skill-card">
-          <div class="skill-head"><span class="skill-icon">&#128736;</span><h3>Tools &amp; Quality</h3></div>
+          <div class="skill-head"><span class="skill-icon">&#128736;</span><h3>Outils &amp; qualité</h3></div>
           <div class="chips">
             <span class="chip">Git</span><span class="chip">GitLab CI/CD</span><span class="chip">SonarQube</span>
             <span class="chip">UML / SysML</span><span class="chip">Jira</span><span class="chip">Confluence</span>
@@ -218,15 +212,15 @@
         </div>
 
       </div>
-      <p class="lang-line mono">Languages — <strong>French</strong> (native) · <strong>English</strong> (professional, C1)</p>
+      <p class="lang-line mono">Langues — <strong>Français</strong> (natif) · <strong>Anglais</strong> (professionnel, C1)</p>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
   <section class="section" id="experience">
     <div class="section-inner">
-      <p class="section-tag mono">03 · EXPERIENCE</p>
-      <h2 class="section-title">Where I've shipped firmware</h2>
+      <p class="section-tag mono">03 · EXPÉRIENCE</p>
+      <h2 class="section-title">Des firmwares livrés en conditions réelles</h2>
 
       <div class="timeline">
 
@@ -234,14 +228,14 @@
           <div class="tl-marker"></div>
           <div class="tl-content">
             <p class="tl-date mono">FEB 2026 — JUL 2026</p>
-            <h3 class="tl-role">Embedded Software Engineer — Power Electronics <span class="tl-badge">Internship</span></h3>
+            <h3 class="tl-role">Ingénieur logiciel embarqué — Électronique de puissance <span class="tl-badge">Stage</span></h3>
             <p class="tl-org">SOCOMEC SAS · Huttenheim, France</p>
-            <p class="tl-summary">Transforming a UPS (Uninterruptible Power Supply) into a high-performance test current source.</p>
+            <p class="tl-summary">Transformation d'un onduleur (UPS) en source de courant de test haute performance.</p>
             <ul class="tl-list">
-              <li>Developed low-level control laws in C on an Infineon XMC4500 (ARM Cortex-M4) to drive power conversion.</li>
-              <li>Implemented a current regulation loop (ABC then Clarke/αβ, PI anti-windup) under strict real-time constraints using hardware Capture &amp; Compare timers.</li>
-              <li>Validated control logic in simulation with Matlab Coder / Simulink before experimental validation on a test bench, in compliance with industrial electrical safety standards.</li>
-              <li>Built strong working knowledge of UPS architectures: rectifiers, inverters, bypass, 4th leg, booster/charger stages.</li>
+              <li>Développement de lois de contrôle bas niveau en C sur Infineon XMC4500 (ARM Cortex-M4) pour la conversion de puissance.</li>
+              <li>Implémentation d'une boucle de régulation de courant (ABC, Clarke/αβ, PI anti-saturation) sous contraintes temps réel strictes avec timers Capture &amp; Compare.</li>
+              <li>Validation de la logique de contrôle sous Matlab Coder / Simulink, puis sur banc d'essai conformément aux exigences de sécurité électrique industrielle.</li>
+              <li>Appropriation des architectures UPS : redresseurs, onduleurs, bypass, quatrième bras et étages booster/chargeur.</li>
             </ul>
             <div class="tl-tags">
               <span class="chip chip-sm">C</span><span class="chip chip-sm">ARM Cortex-M4</span><span class="chip chip-sm">CAN/CANOpen</span>
@@ -254,15 +248,14 @@
           <div class="tl-marker"></div>
           <div class="tl-content">
             <p class="tl-date mono">MAR 2025 — SEP 2025</p>
-            <h3 class="tl-role">Embedded Software Engineer — IoT &amp; Instrumentation <span class="tl-badge">Contract</span></h3>
+            <h3 class="tl-role">Ingénieur logiciel embarqué — IoT &amp; instrumentation <span class="tl-badge">Mission</span></h3>
             <p class="tl-org">TECHNOPURE SAS · Belfort, France</p>
-            <p class="tl-summary">Firmware for a connected air purifier: ambient data collection, remote control, component lifetime tracking.</p>
+            <p class="tl-summary">Firmware d'un purificateur d'air connecté : acquisition, pilotage distant et suivi de durée de vie.</p>
             <ul class="tl-list">
-              <li>Designed a multi-task software architecture in C under FreeRTOS (ESP-IDF) on ESP32.</li>
-              <li>Implemented I2C and PWM drivers for sensor acquisition (CO₂, ozone, ammeters) and GPIO pulse-counting for fan speed.</li>
-              <li>Built a dual-stream communication stack: HTTPS for device authentication, MQTT for telemetry and remote control.</li>
-              <li>Drove low-level power relays for an ozone generator and remote power management.</li>
-              <li>Tracked component lifetime with persistence in non-volatile memory (NVS).</li>
+              <li>Conception d'une architecture multitâche en C sous FreeRTOS (ESP-IDF) sur ESP32.</li>
+              <li>Développement de drivers I2C et PWM pour les capteurs, et comptage d'impulsions GPIO pour la vitesse de ventilation.</li>
+              <li>Intégration d'une pile double flux : HTTPS pour l'authentification, MQTT pour la télémétrie et le pilotage distant.</li>
+              <li>Pilotage bas niveau des relais de puissance et suivi de durée de vie en mémoire non volatile (NVS).</li>
             </ul>
             <div class="tl-tags">
               <span class="chip chip-sm">FreeRTOS</span><span class="chip chip-sm">ESP-IDF</span>
@@ -275,14 +268,14 @@
           <div class="tl-marker"></div>
           <div class="tl-content">
             <p class="tl-date mono">SEP 2024 — FEB 2025</p>
-            <h3 class="tl-role">R&amp;D Junior Engineer — Embedded Control Systems <span class="tl-badge">Internship</span></h3>
+            <h3 class="tl-role">Ingénieur R&amp;D — Systèmes de contrôle embarqués <span class="tl-badge">Stage</span></h3>
             <p class="tl-org">EDF R&amp;D · Palaiseau, France</p>
-            <p class="tl-summary">Control-command algorithm for a microgrid Power Management System (PMS).</p>
+            <p class="tl-summary">Algorithme de contrôle-commande pour le système de gestion énergétique d'un microgrid.</p>
             <ul class="tl-list">
-              <li>Developed the PMS control-command algorithm for a microgrid (batteries, PV, generator) in Go and Python.</li>
-              <li>Built a partial digital twin of the microgrid for control logic validation and simulation.</li>
-              <li>Applied CI/CD pipelines and static analysis (SonarQube) to keep safety-critical code robust.</li>
-              <li>Implemented inter-system communication via Modbus and gRPC.</li>
+              <li>Développement de l'algorithme de pilotage d'un microgrid (batteries, photovoltaïque, générateur) en Go et Python.</li>
+              <li>Conception d'un jumeau numérique partiel pour simuler et valider la logique de commande.</li>
+              <li>Mise en place de CI/CD et d'analyse statique SonarQube pour fiabiliser un code à criticité élevée.</li>
+              <li>Implémentation des communications inter-systèmes via Modbus et gRPC.</li>
             </ul>
             <div class="tl-tags">
               <span class="chip chip-sm">Go</span><span class="chip chip-sm">Python</span>
@@ -298,9 +291,9 @@
   <!-- PROJECTS -->
   <section class="section section-alt" id="projects">
     <div class="section-inner">
-      <p class="section-tag mono">04 · PROJECTS</p>
-      <h2 class="section-title">Selected builds</h2>
-      <p class="section-sub">Personal and academic projects — full source on <a href="https://github.com/DarkBrain-LP" target="_blank" rel="noopener">GitHub</a>.</p>
+      <p class="section-tag mono">04 · PROJETS</p>
+      <h2 class="section-title">Réalisations sélectionnées</h2>
+      <p class="section-sub">Projets personnels et académiques — code source disponible sur <a href="https://github.com/DarkBrain-LP" target="_blank" rel="noopener">GitHub</a>.</p>
 
       <div class="projects-grid">
 
@@ -311,11 +304,11 @@
               <a href="https://github.com/DarkBrain-LP/freertos" target="_blank" rel="noopener" aria-label="Source code">Code →</a>
             </div>
           </div>
-          <h3>Multi-ECU Automotive Network — FreeRTOS / CAN / LIN</h3>
+          <h3>Réseau automobile multi-calculateurs — FreeRTOS / CAN / LIN</h3>
           <p>
-            Two-node embedded network (STM32F407, ARM Cortex-M4) communicating over CAN and LIN
-            under FreeRTOS: one "control" node and one "command" node, mirroring a distributed
-            multi-ECU architecture close to real automotive and rail embedded networks.
+            Réseau embarqué à deux nœuds (STM32F407, ARM Cortex-M4) communiquant en CAN et LIN
+            sous FreeRTOS : un nœud de contrôle et un nœud de commande, inspirés des architectures
+            distribuées automobile et ferroviaire.
           </p>
           <div class="chips">
             <span class="chip chip-sm">C</span><span class="chip chip-sm">STM32F407</span>
@@ -330,11 +323,11 @@
               <a href="https://github.com/DarkBrain-LP/technopure_air_purifier_embd_sys" target="_blank" rel="noopener" aria-label="Source code">Code →</a>
             </div>
           </div>
-          <h3>Connected Air Purifier — FreeRTOS / ESP32 / MQTT</h3>
+          <h3>Purificateur d'air connecté — FreeRTOS / ESP32 / MQTT</h3>
           <p>
-            Production firmware developed at TECHNOPURE: multi-task FreeRTOS architecture on
-            ESP32 acquiring CO₂/ozone/current sensor data, driving power relays, and exposing
-            a dual HTTPS + MQTT communication stack for authentication, telemetry and remote control.
+            Firmware de production développé chez TECHNOPURE : architecture FreeRTOS multitâche sur
+            ESP32, acquisition de capteurs CO₂/ozone/courant, commande de relais et pile HTTPS + MQTT
+            pour l'authentification, la télémétrie et le pilotage distant.
           </p>
           <div class="chips">
             <span class="chip chip-sm">C</span><span class="chip chip-sm">ESP-IDF</span>
@@ -349,11 +342,10 @@
               <a href="https://github.com/DarkBrain-LP/autonomous_turtlebot" target="_blank" rel="noopener" aria-label="Source code">Code →</a>
             </div>
           </div>
-          <h3>Autonomous Mobile Robot — TurtleBot / ROS</h3>
+          <h3>Robot mobile autonome — TurtleBot / ROS</h3>
           <p>
-            Autonomous navigation across two environments: Wi-Fi fingerprinting with a KNN model
-            for corridor positioning, and SLAM-based mapping for an indoor classroom, with
-            LiDAR-based dynamic obstacle avoidance.
+            Navigation autonome dans deux environnements : localisation par empreintes Wi-Fi avec KNN
+            dans un couloir, cartographie SLAM en salle et évitement dynamique d'obstacles par LiDAR.
           </p>
           <div class="chips">
             <span class="chip chip-sm">Python</span><span class="chip chip-sm">ROS</span>
@@ -368,11 +360,10 @@
               <a href="https://github.com/DarkBrain-LP/ev3-robot-sensors" target="_blank" rel="noopener" aria-label="Source code">Code →</a>
             </div>
           </div>
-          <h3>Robot Servo-Control — LEGO EV3 Sensors</h3>
+          <h3>Asservissement robotique — Capteurs LEGO EV3</h3>
           <p>
-            Closed-loop control on a LEGO EV3 platform: line-following and obstacle avoidance
-            using color, ultrasonic and gyroscopic sensors, with a Kalman filter for gyro
-            data and logged PID tuning experiments.
+            Contrôle en boucle fermée sur LEGO EV3 : suivi de ligne et évitement d'obstacles avec
+            capteurs couleur, ultrasoniques et gyroscopiques, filtre de Kalman et réglage PID.
           </p>
           <div class="chips">
             <span class="chip chip-sm">Python</span><span class="chip chip-sm">Kalman Filter</span>
@@ -387,11 +378,10 @@
               <a href="https://github.com/DarkBrain-LP/ascenseur_labview" target="_blank" rel="noopener" aria-label="Source code">Code →</a>
             </div>
           </div>
-          <h3>Elevator Control-Command — LabVIEW / FPGA + RT</h3>
+          <h3>Contrôle-commande d'ascenseur — LabVIEW / FPGA + RT</h3>
           <p>
-            4-level teaching elevator on an NI myRIO target: hybrid FPGA (40 MHz hardware layer)
-            + ARM Cortex-A9 Real-Time architecture, state-machine floor logic, SCAN-based traffic
-            optimization, and safety interlocks on door sensors.
+            Ascenseur pédagogique à quatre niveaux sur NI myRIO : architecture hybride FPGA (couche
+            matérielle à 40 MHz) + ARM Cortex-A9 temps réel, logique par machine d'états et sécurités portes.
           </p>
           <div class="chips">
             <span class="chip chip-sm">LabVIEW</span><span class="chip chip-sm">FPGA</span>
@@ -403,10 +393,10 @@
           <div class="proj-top">
             <span class="proj-icon">&#128193;</span>
           </div>
-          <h3>More on GitHub</h3>
+          <h3>Plus de projets sur GitHub</h3>
           <p>
-            Additional embedded, robotics and software projects — including full commit
-            history, documentation and technical write-ups — are available on my profile.
+            D'autres projets embarqués, robotiques et logiciels — avec historique, documentation
+            et notes techniques — sont disponibles sur mon profil.
           </p>
           <a class="btn btn-ghost btn-sm" href="https://github.com/DarkBrain-LP" target="_blank" rel="noopener">github.com/DarkBrain-LP →</a>
         </article>
@@ -418,29 +408,29 @@
   <!-- EDUCATION -->
   <section class="section" id="education">
     <div class="section-inner">
-      <p class="section-tag mono">05 · EDUCATION</p>
-      <h2 class="section-title">Academic path</h2>
+      <p class="section-tag mono">05 · FORMATION</p>
+      <h2 class="section-title">Parcours académique</h2>
       <div class="edu-grid">
 
         <div class="edu-card">
           <p class="edu-date mono">2025 — 2026</p>
-          <h3>M.Sc. — Complex Systems Engineering (Mechatronics, Double Degree)</h3>
+          <h3>Master — Ingénierie des systèmes complexes (Mécatronique, double diplôme)</h3>
           <p class="edu-school">UTBM, France</p>
-          <p>Real-time control systems, servo control, signal processing.</p>
+          <p>Contrôle temps réel, asservissement, traitement du signal.</p>
         </div>
 
         <div class="edu-card">
           <p class="edu-date mono">2023 — 2026</p>
-          <h3>Engineering Degree — Computer Science (Embedded Systems &amp; Robotics)</h3>
+          <h3>Diplôme d'ingénieur — Informatique (Systèmes embarqués &amp; robotique)</h3>
           <p class="edu-school">UTBM, France</p>
-          <p>Embedded systems, robotics, model-driven engineering (UML/SysML).</p>
+          <p>Systèmes embarqués, robotique, ingénierie dirigée par les modèles (UML/SysML).</p>
         </div>
 
         <div class="edu-card">
           <p class="edu-date mono">2020 — 2023</p>
-          <h3>B.Sc. — Software Engineering</h3>
+          <h3>Licence — Génie logiciel</h3>
           <p class="edu-school">Institut Africain d'Informatique, Togo</p>
-          <p>Software development, database management.</p>
+          <p>Développement logiciel, gestion de bases de données.</p>
         </div>
 
       </div>
@@ -451,10 +441,10 @@
   <section class="section section-alt" id="contact">
     <div class="section-inner contact-inner">
       <p class="section-tag mono">06 · CONTACT</p>
-      <h2 class="section-title">Let's build something reliable</h2>
+      <h2 class="section-title">Construisons des systèmes fiables</h2>
       <p class="section-sub">
-        Looking for an embedded firmware engineer for energy or transportation systems —
-        anywhere in the world? I'd love to hear from you.
+        Vous recherchez un ingénieur logiciel embarqué pour l'énergie ou les transports,
+        en France ou à l'international ? Échangeons.
       </p>
 
       <div class="contact-grid">
@@ -475,12 +465,12 @@
         </a>
         <a class="contact-card" href="assets/Emmanuel_Yovo_CV.pdf" target="_blank" rel="noopener">
           <span class="contact-icon">&#128196;</span>
-          <span class="contact-label">Résumé</span>
-          <span class="contact-value">Download PDF</span>
+          <span class="contact-label">CV</span>
+          <span class="contact-value">Télécharger le PDF</span>
         </a>
       </div>
 
-      <p class="contact-loc mono">Based in Strasbourg, France · Open to relocation worldwide</p>
+      <p class="contact-loc mono">Basé à Strasbourg, France · Mobilité internationale</p>
     </div>
   </section>
 

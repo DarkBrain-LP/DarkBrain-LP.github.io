@@ -22,13 +22,9 @@ if (navToggle) {
 }
 
 /* ---------- typing effect for hero role line ---------- */
-const roles = [
-  'Embedded Firmware Engineer',
-  'C / C++ on ARM Cortex-M',
-  'Real-Time Control Systems',
-  'FreeRTOS & Power Electronics',
-  'Open to Relocation Worldwide'
-];
+const roles = document.documentElement.lang === 'fr'
+  ? ['Ingénieur logiciel embarqué', 'C / C++ sur ARM Cortex-M', 'Systèmes temps réel', 'FreeRTOS & électronique de puissance', 'Mobilité internationale']
+  : ['Embedded Firmware Engineer', 'C / C++ on ARM Cortex-M', 'Real-Time Control Systems', 'FreeRTOS & Power Electronics', 'Open to Relocation Worldwide'];
 const typedEl = document.getElementById('typedRole');
 
 if (typedEl) {
